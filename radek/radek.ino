@@ -3,7 +3,7 @@
 #include <avr/interrupt.h>
 #include <util/delay.h>
 #include <stdbool.h>
-#include <BitOps.h>
+#include "BitOps.h"
  
 const uint8_t pocet_disp = 12;
 const uint8_t DIN = 0; // PD0
@@ -279,4 +279,5 @@ int main()
       sekundy_prepnuti = 0; // Po 20 vteřinách nastavit sekundy_prepnuti na 0 -> opakovat cyklus
   }
   return 0;
+
 }
